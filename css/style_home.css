@@ -39,6 +39,8 @@ body, html{
 
 }
 
+
+
 #leftFrame{
 
     background-color:#CC001D;
@@ -50,13 +52,13 @@ body, html{
 
     border-radius: 15px 0 0 15px;
 
-
-
-
-
-
+    background-image: url("../css/imagens/login/logo-casadoleo.png");
+    background-repeat: no-repeat;  
+    background-position: top;
     
 }
+
+
     
     
 
