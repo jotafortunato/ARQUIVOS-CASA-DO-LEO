@@ -269,7 +269,7 @@ body, html{
 
     background-color: #66000E;
     background-image: url('../css/imagens/login/id.png');
-    width: 15%;
+    width: 20%;
     padding: 10px 40px 10px 10px;
 
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ body, html{
 
     background-color: #66000E;
     background-image: url('../css/imagens/login/id.png');
-    width: 15%;
+    width: 20%;
     padding: 10px 40px 10px 10px;
 
     background-repeat: no-repeat;
@@ -338,12 +338,24 @@ body, html{
 
 }
 
-#password{
+#nomeUsuario{
 
-    width: 15%;
+    width: 20%;
 
     position: absolute;
-    top: 71%;
+    top: 22%;
+    left: 10%;
+
+    
+
+}
+
+#password{
+
+    width: 20%;
+
+    position: absolute;
+    top: 74%;
     left: 10%;
 
 
@@ -353,9 +365,9 @@ body, html{
 
 #email{
 
-    width: 15%;
+    width: 20%;
     position:absolute;
-    top: 58%;
+    top: 61%;
     left: 10%;
 
 
@@ -368,7 +380,7 @@ body, html{
     font-size: 10px;
 
     position: absolute;
-    left: 21%;
+    left: 25%;
     top: 47%;
 
 
@@ -378,14 +390,11 @@ input[type="date"] {
     border: 1px solid #66000E; /* Altere a cor da borda */
     color: #616161; /* Altere a cor do texto */
     text-align: center;
+
+    width: 13%;
+    height: 6%;
     
 
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url('datas.png') center/cover no-repeat; /* Use uma imagem personalizada como ícone */
-    width: 15px; 
-    height: 16px; 
 }
 
 
@@ -477,7 +486,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 #divNova{
 
-    background-color:#FEF7F9;
+    background-color:#e0e5ec;
     width: 49%;
     height: 400px;
 
@@ -535,23 +544,23 @@ img{
 
 .botaoRadio{
 
-    width: 20px;
-    height: 20px;
+    width: 4%;
+    height: 4%;
 
     position: absolute;
+    left: 9%;
     top: 13%;
-    left: 90px;
 
 
 }
 
 .botao_Radio{
 
-    width: 20px;
-    height: 20px;
+    width: 4%;
+    height: 4%;
 
     position: absolute;
-    left: 190px;
+    left: 24%;
     top: 13%;
 
 
@@ -563,7 +572,7 @@ img{
     font-size: 15px;
 
     position: absolute;
-    left: 13%;
+    left: 13.5%;
     top: 10%
 
 }
@@ -574,7 +583,7 @@ img{
     font-size: 15px;
 
     position: absolute;
-    left: 24%;
+    left: 28%;
     top: 10%
 
 
@@ -592,7 +601,7 @@ label{
 
     position: absolute;
     top: 22%;
-    left: 60%;
+    left: 52%;
     padding: 10px;
 
     background-color: #66000E;
@@ -602,19 +611,163 @@ label{
 
 }
 
+/*
+
+
 .labelCep{
+
+    
 
 
 }
+
 
 .cepButton{
 
+    width: 10%;
+    position:absolute;
+    left: 75%;
+    top: 24%;
+
+    background-color: #66000E;
+    color: #616161;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    
+
 
 }
+*/
+
+.cepButton{
+
+    width: 10%;
+    height: 5%;
+    position:absolute;
+    left: 68%;
+    top: 24%;
+
+    border-radius: 12% 12% 12% 12%;
+    
+
+    cursor: pointer;
+
+    border: none;
+
+
+    color: #000;
+}
+
+.cepButton:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+.cepButton:hover {
+    color: #000;
+}
+.cepButton:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
 
 #rua{
 
-    width: 15%;
+    width: 25%;
 
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    padding: 10px;
+
+    background-color: #66000E;
+    border-style: none;
+
+
+}
+
+#numero{
+
+    width: 5%;
+
+    position: absolute;
+    top: 35%;
+    left: 82%;
+    padding: 10px;
+
+    background-color: #66000E;
+    border-style: none;
+
+}
+
+
+#bairro{
+
+    width: 20%;
+
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    padding: 10px;
+
+    background-color: #66000E;
+    border-style: none;
+
+}
+
+#cidade{
+
+    width: 20%;
+
+    position: absolute;
+    top: 61%;
+    left: 52%;
+    padding: 10px;
+
+    background-color: #66000E;
+    border-style: none;
+
+}
+
+#estado{
+
+    width: 20%;
+
+    position: absolute;
+    top: 74%;
+    left: 52%;
+    padding: 10px;
+
+    background-color: #66000E;
+    border-style: none;
+
+}
+
+
+/* LOGO */
+.foto{
+
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    left: 23%;
+    top: 21%;
 
 }
